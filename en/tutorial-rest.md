@@ -549,6 +549,19 @@ $app->delete(
 );
 ```
 
+## Creating database
+Now we will create database for our application.
+Run SQL queries as follows:
+```
+CREATE DATABASE robotics;
+CREATE TABLE `robots` (
+    `id`    int(10)     unsigned NOT NULL AUTO_INCREMENT,
+    `name`  varchar(200)          NOT NULL,
+    
+    PRIMARY KEY (`id`)
+);
+```
+
 <a name='testing'></a>
 ## Testing our Application
 Using [curl](http://en.wikipedia.org/wiki/CURL) we'll test every route in our application verifying its proper operation.
